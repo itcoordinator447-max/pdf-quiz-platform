@@ -88,9 +88,10 @@ app.post("/submit", (req, res) => {
         if (student === correct) score++;
 
         details.push({
-            question: q.question,
-            correct: correct,
-            student: student
+            question:q.question,
+correct:correct,
+student:student,
+options:q.options
         });
 
     });
@@ -107,3 +108,4 @@ app.listen(3000, () => {
     console.log("Server running on port 3000");
 
 });
+
