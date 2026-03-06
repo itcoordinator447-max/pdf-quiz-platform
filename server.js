@@ -62,7 +62,7 @@ app.post("/upload", async (req, res) => {
     quizzes[id] = questions;
 
     res.json({
-        link: `http://localhost:3000/quiz.html?id=${id}`
+       link: `/quiz.html?id=${id}`
     });
 
 });
@@ -105,4 +105,5 @@ app.post("/submit", (req, res) => {
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
+
 });
