@@ -14,6 +14,7 @@ body:formData
 let data=await res.json()
 
 document.getElementById("link").innerHTML=
-"Share this quiz link: "+data.link
+"Share this quiz link: "+window.location.origin + data.link
+
 
 }
